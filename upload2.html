@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>PSNI :: Reporting Portal</title>
+	<link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+
+	<div id="header">
+		<a href="home.html">
+			<img src="assets/psni_logo.png" style="margin-top:10px;">
+		</a>
+        
+        <ul id="main_navigation_options">
+			<li><a href="home.html">Dashboard</a></li>
+			<li><a href="reports.html">Reports</a></li>
+            <li><a href="upload.html">Upload File</a></li>
+            <li><a href="help.html">Help</a></li>
+			<li><a href="index.html">Logout</a></li>
+		</ul>
+	</div>
+	<div class="flash notice">Please login to access this page.</div>
+	<div id="content">
+    	<h1>Participants File Upload</h1>
+        <p style="margin-top: 30px:">
+		<form action="/sessions" method="post" accept-charset="UTF-8">
+      	<div class="field">
+   	 		<label for="session_email">Choose your file to upload</label>
+    		<input id="session_email" style="margin: 25px 0 20px 0;" name="session[email]" size="30" type="file" />
+  		</div>
+  		<div class="actions" style="padding-top: 10px;">
+    		<a href="upload.html" class="large primary btn">Upload</a>
+ 		 </div>
+		</form>
+        </p>
+        <hr style="margin: 10px 0 10px 0;">
+        <p style="font-weight:bold; color: red; margin-top: 20px;">
+        	ERROR: There was a problem uploading your file.  Please check your file and try again.  If you are unsure about the file format please visit our <a href="help.html">Help Library</a> to find an example of the <a href="help.html">Participants File format</a>.
+        </p>
+	</div>
+	<br>
+	<br>
+</body>
+</html>
